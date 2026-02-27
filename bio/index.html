@@ -14,7 +14,6 @@
     />
 
     <style>
-      /* --- Configurações Globais e Variáveis de Cor --- */
       :root {
         --cor-primaria: #6b3a7a;
         --cor-secundaria: #9b59b6;
@@ -105,7 +104,7 @@
         padding: 0 10px;
       }
 
-      /* --- Tags (Bolhas) --- */
+      /* --- Tags de modalidade de atendimento --- */
       .tags-container {
         display: flex;
         justify-content: center;
@@ -115,14 +114,12 @@
       }
 
       .tag {
-        /* border: 2px solid var(--cor-primaria); */
         color: var(--cor-primaria);
         background: transparent;
         width: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 36px; */
         border-radius: 50px;
         font-weight: 600;
         font-size: 0.85rem;
@@ -183,20 +180,17 @@
         display: none !important;
       }
 
-      /* --- NOVO CSS: Logo no Rodapé --- */
+      /* --- Logo no Rodapé --- */
       .footer-logo {
-        margin-top: 2.5rem; /* Espaço entre o último botão e a logo */
+        margin-top: 2.5rem;
         display: flex;
         justify-content: center;
-        opacity: 0.9; /* Leve transparência para ficar suave */
+        opacity: 0.9;
       }
 
       .logo-img {
-        /* Ajuste aqui o tamanho que preferir. 80px a 120px costuma ser bom */
         width: 100px;
         height: auto;
-        /* Opcional: Filtro para deixar a logo roxa se ela for preta/branca */
-        /* filter: hue-rotate(280deg); */
       }
 
       @media (max-width: 360px) {
@@ -239,7 +233,7 @@
 
       <div class="tags-container">
         <span class="tag"><i class="fas fa-video"></i> Online</span>
-        <!-- <span class="tag"><i class="fas fa-location-dot"></i> Presencial</span> -->
+        <span class="tag hidden"><i class="fas fa-location-dot"></i> Presencial</span>
       </div>
 
       <div class="links-group">
